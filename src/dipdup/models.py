@@ -260,7 +260,7 @@ class ContractMetadata(Model):
 class TokenMetadata(Model):
     network = fields.CharField(51)
     contract = fields.CharField(36)
-    token_id = fields.IntField()
+    token_id = fields.CharField(16)
     metadata = fields.JSONField()
     update_id = fields.IntField()
 
